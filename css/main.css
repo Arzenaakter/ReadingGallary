@@ -108,5 +108,60 @@ margin: auto;
  .category_col{
   margin: 0 auto;
  }
+ .footer{
+  
+  height: auto;
+  background: #4c4c4e;
+
+ }
+ .footer_icon i{
+  color: #DADADD;
+  font-size: 40px;
+  margin-left: 20px;
+
+ }
+ .footer_logo{
+  color: #DADADD;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 40px;
+  
+
+ }
+ .footer_icon_link{
+  color: #DADADD;
+  font-weight: bold;
+  margin-left: 40px;
+ }
+ .footer_icon_link a{
+  color: #DADADD;
+  margin-bottom: 10px;
+  text-decoration: none;
+  
+ }
+ .footer_icon_mail i{
+
+  color: #DADADD;
+  margin-right: 20px;
+  
+ }
+ .footer_icon_mail {
+  color: #DADADD;
+  margin-right: 20px;
+  margin-left: 40px;
+ }
+ .copyright{
+  background: #222224;
+  color: #a5a5ad;
+  font-size: 15px;
+  
+ }
+ .copyright p{
+  margin: 0 auto;
+  padding: 40px;
+
+ }
+
+
 
 
