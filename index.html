@@ -34,20 +34,22 @@
           </li>
         
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              Category
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Program 1</a>
-              <a class="dropdown-item" href="#">Program 2</a>
-              <a class="dropdown-item" href="#">program 3</a>
+              <a class="dropdown-item" href="category.html">Programming Books</a>
+              <a class="dropdown-item" href="category.html">Electrical Books</a>
+              <a class="dropdown-item" href="category.html">Mathematic Books</a>
+              <a class="dropdown-item" href="category.html">Data & Networking Books</a>
+              <a class="dropdown-item" href="category.html">Other Books</a>
            
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">About</a>
+            <a class="nav-link " href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">contact</a>
+            <a class="nav-link " href="contact.html">contact</a>
           </li>
         </ul>
         <form class="form-inline  ">
@@ -57,12 +59,17 @@
       </div>
       <div>
         <!--login Start-->
-        <a href="" class="btn btn-outline-light">Log In</a>
+        <button class="btn btn-outline-light" data-toggle="modal" data-target="#modalLoginForm" >LogIn</button>
+        
+        
+        
         
          <!--login end-->
           <!--sign up Start-->
 
-        <a href="" class="btn btn-outline-light">Sign Up</a>
+        <a href="" class="btn btn-outline-light" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a>
+
+
          <!--sign up end-->
       </div>
     </nav>
@@ -154,8 +161,8 @@
                 <p class="card-text">Book Author</p>
                 <p class="card-text">Rating :</p>
 
-                <a href="" class="btn ">Read</a>
-                <a href="" class="btn "> Download</a>
+                <a href="books/An Introduction to Numerical Methods and Analysis ( PDFDrive ).pdf" target="_blank" class="btn ">Read</a>
+                <a href="books/An Introduction to Numerical Methods and Analysis ( PDFDrive ).pdf"  class="btn "> Download</a>
               </div>
             </div>
             <div class="card books_card col-lg-3 m-3 col-md-3 col-sm-12">
@@ -337,7 +344,7 @@
             <br><br>
             <div class="category_info row ">
               <div class="  category_col">
-                <h2>Programming books</h2>
+                <h2>Mathematic Books</h2>
                 <br>
                <a href="" class="category_link">Note</a>
                <a href="" class="category_link">Previous Reading</a>
@@ -473,9 +480,117 @@
      <div class="row copyright">
        <p> &#169; ArzenaAkter</p>
      </div>
- 
- 
 
+     <!--for login Modal start
+     <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">User Login</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" placeholder="Username">
+
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+
+              </div>
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-warning">Login</button>
+
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>  -->
+ 
+ <!--signupmodal end-->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="orangeForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+          </div>
+  
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="orangeForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--signupmodal end-->
+  <!--login modal start-->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="defaultForm-email" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+              </div>
+      
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="defaultForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+              </div>
+      
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--for loginmodal-->
+  <!--<div class="text-center">
+    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
+      Modal Register Form</a>
+  </div> -->
   
 
 <!--bootstrap js link-->

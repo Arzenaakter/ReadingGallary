@@ -9,55 +9,101 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">CSEBooksGalary</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top  ">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
         
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active ">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Category
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Programming 1</a>
-                  <a class="dropdown-item" href="#">Program 2</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">program 3</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Contact</a>
-              </li>
-            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="category.html">Program 1</a>
+              <a class="dropdown-item" href="category.html">Program 2</a>
+              <a class="dropdown-item" href="category.html">program 3</a>
+           
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="about.html">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="contact.html">contact</a>
+          </li>
+        </ul>
+        <form class="form-inline  ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      <div>
+        <!--login Start-->
+        <a href="" class="btn btn-outline-light">Log In</a>
+        
+         <!--login end-->
+          <!--sign up Start-->
+
+        <a href="" class="btn btn-outline-light">Sign Up</a>
+         <!--sign up end-->
+      </div>
+    </nav>
+	 <!-- start slider section -->
+    <div class="slider1">
+      <div id="slide1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#slide1" data-slide-to="0"></li>
+          <li  data-target="#slide1" data-slide-to="1"></li>
+          <li  data-target="#slide1" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active"> 
+            <img src="imgs/slidepic1.png" class="d-block img-fluid slideimg" alt="first slide">
+            <div class="carousel-caption">
+              <h1>Today a reader, tomorrow a leader</h1>
+              <p>Reading is important. If you know how to read, then the whole world opens up to you.</p>
+
+            </div>
+
           </div>
-          <form class="form-inline my-2 my-lg-0 ">
-            <input class="form-control  " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark  " type="submit">Search</button>
-          </form>
+          <div class="carousel-item "> 
+            <img src="imgs/slidepic2.jpg" class="d-block img-fluid slideimg"  alt="second slide">
+            <div class="carousel-caption">
+              <h1>Books may well be the only true magic</h1>
+              <p>We don’t need a list of rights and wrongs, tables of dos and don’ts: We need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever..</p>
+            </div>
+
+          </div>
+          <div class="carousel-item "> 
+            <img src="imgs/slidepic3.png" class="d-block img-fluid slideimg" alt="third slide">
+            <div class="carousel-caption">
+              <h1>Keep Reading</h1>
+              <p>Think before you speak. Read before you think. We can help get your books.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="row">
-          <a href="" class="btn  btn-outline-dark col-sm  ">Log In</a>
-          <a href="" class=" btn btn-outline-dark col-sm ">Sign Up</a>
-        </div>
-        
-        </nav>
+        <a href="#slide1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon" ></span>
+        </a>
+        <a href="#slide1" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon" ></span>
+      </a>
+
+      </div>
+    </div>
+    <!-- End slider section-->
 
 
-        <br><br> <br><br> <br><br> <br><br>
-
-        <H1> about</H1>
+        <br><br> <br><br>
+        <h1>About</h1>
 
 
 
